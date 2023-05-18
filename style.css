@@ -238,7 +238,7 @@ section{
 }
 
 .about .about-img{
-    text-align: center;
+    text-align: left;
 }
 
 .about .about-img img{
@@ -246,10 +246,6 @@ section{
     width: 350px;
     object-fit: cover;
     border-radius: 30px;
-}
-
-.about .about-content{
-    margin-left: 15%;
 }
 
 .about .about-content h2{
