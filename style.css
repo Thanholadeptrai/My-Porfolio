@@ -585,21 +585,24 @@ footer .top i{
 }
 
 @media (max-width: 920px){
-    .about{
+    .aboutme .about{
         grid-template-columns: 1fr;
     }
-    .about-img{
+    .abloutme .about .about-img{
         text-align: center;
-        order: 2;
     }
-    .about-img img{
-        width: 100%;
-        height: auto;
-        max-width: 100%;
+    .abloutme .about .about-content{
+        align-items: center;
+    }
+    .home .icons{
+        display: none;
     }
 }
 
 @media (max-width: 840px){
+    .skills .box2{
+        grid-template-columns: 1fr;
+    }
     #menu-icon{
         display: block;
     }
@@ -631,5 +634,3 @@ footer .top i{
         top: 100%;
     }
 }
-
-
