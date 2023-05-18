@@ -584,7 +584,7 @@ footer .top i{
     }
 }
 
-@media (max-width: 920px){
+@media (max-width: 840px){
     .aboutme .about{
         grid-template-columns: 1fr;
     }
@@ -597,9 +597,6 @@ footer .top i{
     .home .icons{
         display: none;
     }
-}
-
-@media (max-width: 840px){
     .skills .box2{
         grid-template-columns: 1fr;
     }
