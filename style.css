@@ -105,6 +105,11 @@ section{
     gap: 2rem; /* tạo khoảng cách giữa các phần tử với nhau theo cột và hàng */
 }
 
+.home .home-text{
+    margin:auto;
+    text-align: left;
+}
+
 .home .intro .greet1{
     background-color:deeppink;
     color: white;
@@ -255,7 +260,7 @@ section{
 }
 
 .about .about-img{
-    text-align: left;
+    text-align: center;
 }
 
 .about .about-img img{
@@ -263,6 +268,11 @@ section{
     width: 350px;
     object-fit: cover;
     border-radius: 30px;
+}
+
+.about .about-content{
+    margin: auto;
+    text-align: left;
 }
 
 .about .about-content h2{
@@ -598,8 +608,10 @@ footer{
 @media (max-width: 840px){
     .aboutme .about{
         grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
     }
-    .abloutme .about .about-img{
+    .abloutme .about .about-img img{
         text-align: center;
     }
     .abloutme .about .about-content{
