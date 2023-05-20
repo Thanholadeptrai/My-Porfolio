@@ -23,18 +23,3 @@ window.addEventListener("scroll", function(){
         scroll.style.display = 'none';
     } 
 })
-
-// function scrollToTop() {
-//     window.scrollTo({
-//         top: 0,
-//         behavior: 'smooth'
-//     });
-// }
-
-// window.addEventListener('scroll', function() {
-//     var scrollUp = document.getElementById('scroll-up');
-//     if (window.scrollY > 100) scrollUp.style.display = 'block';
-//     else scrollUp.style.display = 'none';
-// });
-
-// document.getElementById('scroll-up').addEventListener('click', scrollToTop);
