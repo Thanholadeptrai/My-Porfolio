@@ -99,8 +99,7 @@ section{
     height: 100%;
     width: 100%;
     position: relative;
-    display: grid; /* chia bề mặt của nó thành một lưới, bao gồm các hàng, cột */
-    grid-template-columns: repeat(2, 1fr); /* tạo ra 2 cột, mỗi cột có độ rộng bằng nhau */
+    display: flex;
     align-items: center;
     gap: 2rem; /* tạo khoảng cách giữa các phần tử với nhau theo cột và hàng */
 }
@@ -197,6 +196,17 @@ section{
     animation: spinner 3s infinite linear alternate;
 }
 
+.home .icon_container {
+    display: flex;
+    padding-top: 250px;
+    margin-left: 20px;
+}
+.home .icon_container .icons {
+    
+    display: flex;
+    flex-direction: column;
+}
+
 @keyframes spinner{
     to{
         transform: rotate(360deg);
@@ -204,9 +214,7 @@ section{
 }
 
 .home .icons{
-    position: absolute;
     top: 55%;
-    padding: 0 15%;
     transform: translateY(-50%);
 }
 
@@ -220,7 +228,7 @@ section{
 
 .home .icons i:hover{
     color: deeppink;
-    transform: translateY(-5px);
+    transform: translateY(-2px);
 }
 
 /* màn hình about me */
@@ -591,17 +599,38 @@ footer{
         padding: 12px 3%;
     }
     .home .icons{
-        padding: 0 3%;
+        display: flex;
         transition: .2s;
     }
 }
 
 @media (max-width: 1100px){
     .home{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
-    .home-img{
-        text-align: center;
+    /* .home .home-img img {
+        width: 600px;
+        height: 600px;
+    }
+    .home .home-img .ring {
+        width: 600px;
+        height: 600px;
+    } */
+    
+    .home .icon_container {
+        display: flex;
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .home .icon_container .icons {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+    .home .icon_container .icons a i{
+        font-size: 1.5rem;
     }
 }
 
@@ -617,9 +646,7 @@ footer{
     .abloutme .about .about-content{
         align-items: center;
     }
-    .home .icons{
-        display: none;
-    }
+
     .skills .box2{
         grid-template-columns: 1fr;
     }
