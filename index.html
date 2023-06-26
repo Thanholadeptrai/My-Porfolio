@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- để nội dung trong 1 trang web hiển thị đúng quy cách thì browser phải biết sử dụng bộ mã ký tự nào (TV, English,...) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- sử dụng công nghệ mới nhất để hiển thị ra content -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive: hiển thị phù hợp trên mọi thiết bị -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- thanh menu -->
+    <header>
+        <a href = "#" class="logo">Cod<span>e</span>r.</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#qualification">Qualification</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="#" id="scroll-up">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+        <!-- <div id="scroll-up">
+            <i class='bx bx-up-arrow-alt'></i>
+        </div> -->
+    </header>
+    <!-- màn hình home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="intro">
+                <span class="greet1">Hi,</span>
+                <span class="greet2">I'm</span>
+            </div>
+            <h1>Nguyen Ngoc Ha</h1>
+            <p class="p1">Beginner <span> Developer.</span></p>
+            <p class="p2">3rd year student majoring in Information Techlogogy at Posts and Telecommunications Institute of Technology.</p>
+            <div class="button">
+                <a href="#contact">Say Hello <span> <i class="fa-solid fa-paper-plane"> </i></span></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="img.jpg">
+            <div class="ring"></div>
+        </div>
+        <div class="icon_container">
+            <div class="icons">
+                <a href="https://www.facebook.com/nnha.1099"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/__nn.ha/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/HaNguyen1099"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- màn hình about me -->
+    <section class="aboutme" id="about">
+        <div class="heading">
+            <h2>About <span>me</span></h2>
+            <p>My pesonal information</p>
+        </div>
+        <div class="about">
+            <div class="about-img">
+                <img src="img2.jpg">
+            </div>
+            <div class="about-content">
+                <h2><span>Beginner</span> Developer.</h2>
+                <p>Self-taught programmer</p>
+                <div class="icons-list">
+                    <ul class="icons">
+                        <li><i class="fa-solid fa-code"></i> <strong>Fullname:</strong> <span>Nguyen Ngoc Ha</span></li>
+                        <li><i class="fa-solid fa-code"></i> <strong>Gender:</strong> <span>Female</span></li>
+                        <li><i class="fa-solid fa-code"></i> <strong>Birthday:</strong> <span>08/06/2003</span></li>
+                        <li><i class="fa-solid fa-code"></i> <strong>Concerned about:</strong> <span>Mobile Developer</span></li>
+                        <li><i class="fa-solid fa-code"></i> <strong>Phone Number:</strong> <span>0972198734</span></li>
+                        <li><i class="fa-solid fa-code"></i> <strong>City:</strong> <span>Kim Son, Ninh Binh, Viet Nam</span></li>
+                        <li><i class="fa-solid fa-code"></i> <strong>Interests:</strong> <span>Travelling | Movie | Sleeping</span></li>
+                    </ul>
+                </div>
+                <div class="button2">
+                    <a href="#">Download CV <i class="fa-solid fa-file-code"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- màn hình quali -->
+    <section class="quali" id="qualification">
+        <div class="headingQ">
+            <h2><span>Quali</span>fication</h2>
+            <p>My personal journey</p>
+        </div>
+        <div class="box">
+            <div class="item">
+                <h3>My <span>Education</span></h3>
+                <div class="my">
+                    <p>Information Technology</p>
+                    <p>PTIT</p>
+                    <span><i class="fa-solid fa-calendar-days"></i> 2021 - Present</span>
+                </div>
+            </div>
+            <div class="item">
+                <h3>My <span>Experience</span></h3>
+                <div class="my">
+                    <p>Portfolio</p>
+                    <p>Personal Project</p>
+                    <span><i class="fa-solid fa-calendar-days"></i> 2023 - Present</span>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- Màn hình skills -->
+    <section class="skills" id="skills">
+        <div class="headingS">
+            <h2>My <span>Skills</span></h2>
+            <p>All about my skills</p>
+        </div>
+        <div class="box2">
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3><span>Technical</span> skills</h3>
+                <ul class="list">
+                    <li><i class="fa-solid fa-terminal"></i> <span>C/C++</span></li>
+                    <li><i class="fa-solid fa-terminal"></i> <span>Algorithms</span></li>
+                    <li><i class="fa-solid fa-terminal"></i> <span>HTML / CSS / JavaScript</span></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <h3><span>English </span>fluency</h3>
+                <span class="english">700+ TOEIC L&R</span>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <h3><span>Soft</span> skills</h3>
+                <ul class="list">
+                    <li><i class="fa-solid fa-terminal"></i> <span>Networking</span></li>
+                    <li><i class="fa-solid fa-terminal"></i> <span>Teamwork</span></li>
+                    <li><i class="fa-solid fa-terminal"></i> <span>Creative thinking</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- màn hình contact me -->
+    <section class="contactme" id="contact">
+        <div class="headingC">
+            <h2><span>Contact</span> Me!</h2>
+            <p>Connect with me</p>
+        </div>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">  
+            </div>
+            <textarea rows="10" cols="50" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <!-- footer -->
+    <footer> 
+        <div class="footer-content">
+            <p>Copyright &copy; 2023 by Nguyen Ngoc Ha. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/67e96bda58.js" crossorigin="anonymous"></script>
+</body>
+</html>

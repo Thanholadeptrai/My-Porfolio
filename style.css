@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+/* thanh menu */
+
+header{
+    position: fixed; /* vị trí thanh menu sẽ luôn nằm cố định 1 chỗ */
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex; /* các thành phần sẽ nằm trên 1 hàng */
+    align-items: center;
+    justify-content: space-between; /* khoảng cách giữa các thành phần luôn bằng nhau */
+    padding: 22px 15%; /* (bên trong hộp) căn bên trên 22px, bên phải 15% */
+    transition: all .30s ease;
+    background: black;
+    border-bottom: 1px solid rgb(16, 16, 16);
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span{
+    color:deeppink;
+}
+
+.navlist{
+    display: flex;
+    list-style: none;
+}
+
+.navlist a{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 25px;
+    transition: all .30s ease; /* điều khiển tốc độ khi thay đổi các thuộc tính của css*/
+}
+
+.navlist a:hover{
+    color:deeppink;
+}
+
+.navlist a.active{
+    color:deeppink;
+}
+
+#menu-icon{
+    font-size: 30px;
+    color: white;
+    z-index: 1001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+#scroll-up{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: deeppink;
+    color:white;
+    border-radius: 8px;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* màn hình home */
+
+section{
+    padding: 100px 18% 50px;
+}
+
+.home{
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* tạo khoảng cách giữa các phần tử với nhau theo cột và hàng */
+}
+
+.home .home-text{
+    margin: auto;
+    text-align: left;
+}
+
+.home .intro .greet1{
+    background-color:deeppink;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 2px 10px 2px 10px;
+    margin: 0 auto;
+}
+
+.home .intro .greet2{
+    color: white;
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.home h1{
+    color: white;
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.home .p1{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.home .p1 span{
+    color: deeppink;
+}
+
+.home .p2{
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home .button a{
+    display: inline-block;
+    background-color:deeppink;
+    border-radius: 8px;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all .30s ease;
+}
+
+.home .button a i{
+    padding-left: 5px;
+}
+
+.home .button:hover a {
+    background-color:transparent;
+    border: 2px solid white;
+    transform: translateX(8px);
+}
+
+.home .home-img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.home .home-img img{
+    height: 370px;
+    width: 350px;
+    object-fit: cover;
+    animation: animate 3s infinite linear alternate;
+}
+
+.home .icon_container {
+    display: flex;
+    padding-top: 250px;
+    margin-left: 20px;
+}
+.home .icon_container .icons {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 35% 70% / 60% 30% 65% 40%;
+    }
+    50%{
+        border-radius: 60% 50% 65% 40% / 30% 40% 35% 70%;
+    }
+    100%{
+        border-radius: 60% 40% 35% 70% / 60% 30% 65% 40%;
+    }
+}
+
+.home .icons{
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.home .icons i{
+    display: block;
+    margin: 25px 0;
+    font-size: 15px;
+    color: white;
+    transition: all .30s ease;
+}
+
+.home .icons i:hover{
+    color: deeppink;
+    transform: translateY(-2px);
+}
+
+/* màn hình about me */
+
+.aboutme .heading{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.aboutme .heading h2{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.aboutme .heading h2 span{
+    color: deeppink;
+}
+
+.aboutme .heading p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.aboutme .about{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+}
+
+.about .about-img{
+    text-align: center;
+}
+
+.about .about-img img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.about .about-content{
+    margin: auto;
+    text-align: left;
+}
+
+.about .about-content h2{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 0.5%;
+}
+
+.about .about-content h2 span{
+    color: deeppink;
+}
+
+.about .about-content p{
+    font-size: 15px;
+}
+
+.about .about-content .icons{
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+
+.about .about-content .icons i{
+    color: deeppink;
+}
+
+.about .about-content .icons i:hover{
+    color: white;
+    transform: translateX(-5px);
+}
+
+.about .about-content .icons strong{
+    padding-left: 5px;
+}
+
+.about .about-content .button2 a{
+    display: inline-block;
+    background-color:deeppink;
+    border-radius: 8px;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all .30s ease;
+}
+
+.about .about-content .button2 a i{
+    padding-left: 5px;
+}
+
+.about .about-content .button2:hover a {
+    background-color:transparent;
+    border: 2px solid white;
+    transform: translateX(8px);
+}
+
+/* màn hình quali */
+
+.quali .headingQ{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.quali .headingQ h2{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.quali .headingQ h2 span{
+    color: deeppink;
+}
+
+.quali .headingQ p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.quali .box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; 
+    margin-top: 50px;
+}
+
+.quali .box .item{
+    position:relative;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-style:groove;
+    border-color:rgb(34, 33, 33);
+    border-width: 1.5px;
+    transition: 0.4s;
+}
+
+.quali .box .item h3{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.quali .box .item h3 span{
+    color:deeppink;
+}
+
+.quali .box .item .my p{
+    font-size: 15px;
+}
+
+.quali .box .item .my span{
+    font-size: 15px;
+}
+
+.quali .box .item .my i{
+    padding-right: 5px;
+}
+
+/* màn hình skills */
+
+.skills .headingS{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .headingS h2{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.skills .headingS h2 span{
+    color: deeppink;
+}
+
+.skills .headingS p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.skills .box2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: left;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+    margin-top: 50px;
+}
+
+.skills .box2 .item{
+    position:relative;
+    padding: 30px 20px;
+    text-align: left;
+    border-radius: 10px;
+    border-style:groove;
+    border-color:rgb(34, 33, 33);
+    border-width: 1.5px;
+    transition: 0.4s;
+}
+
+.skills .box2 .item .icon{
+    padding-bottom: 5px;
+    color: white;
+}
+
+.skills .box2 .item .icon i{
+    color: white;
+    font-size: 18px;
+}
+
+.skills .box2 .item .icon i:hover{
+    transform: translateY(-5px);
+}
+
+.skills .box2 .item h3{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.skills .box2 .item h3 span{
+    color: deeppink;
+}
+
+.skills .box2 .item .list{
+    list-style: none;
+    text-align: left;
+}
+
+.skills .box2 .item .list i{
+    padding-left: 7px;
+    padding-right: 5px;
+    color: deeppink;
+}
+
+.skills .box2 .item .list span{
+    font-size: 15px;
+}
+
+.skills .box2 .item .english{
+    font-size: 15px;
+}
+
+/* màn hình contact me */
+
+.contactme .headingC{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactme .headingC h2{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.contactme .headingC h2 span{
+    color: deeppink;
+}
+
+.contactme .headingC p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.contactme form{
+    max-width: 70 rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contactme form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* các item sẽ bọc trọn trong container */
+}
+
+.contactme form .input-box input,
+.contactme form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin: .5rem 0;
+    border-style:groove;
+    border-color:rgb(34, 33, 33);
+    border-width: 1px;
+}
+
+.contactme form .input-box input{
+    width: 49%;
+}
+
+.contactme form .btn{
+    display: inline-block;
+    background-color:deeppink;
+    border-radius: 8px;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all .30s ease;
+}
+
+.contactme form .btn:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    transform: translateX(8px);
+}
+
+/* phần footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15%; 
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: black;
+    border-top: 1px solid rgb(16, 16, 16);
+}
+
+.footer-content p{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+@media (max-width: 1480px){
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    section{
+        padding: 100px 10% 60px;
+    }
+    footer{
+        padding: 12px 3%;
+    }
+    .home .icons{
+        display: flex;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1100px){
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .home .home-img img {
+        width: 600px;
+        height: 600px;
+    }
+    .home .home-img .ring {
+        width: 600px;
+        height: 600px;
+    } */
+    
+    .home .icon_container {
+        display: flex;
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .home .icon_container .icons {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+    .home .icon_container .icons a i{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 840px){
+    .aboutme .about{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .abloutme .about .about-img img{
+        text-align: center;
+    }
+    .abloutme .about .about-content{
+        align-items: center;
+    }
+
+    .skills .box2{
+        grid-template-columns: 1fr;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        transition: all .45s ease;
+        background-color: black;
+        transform: translateX(-100%);
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 18px;
+        transition: all .3s ease;
+        color:white;
+    }
+    .navlist a:hover{
+        color: deeppink;
+    }
+    .navlist a.active{
+        color: deeppink;
+    }
+    .navlist.open{
+        transform: translateX(0);
+    }
+}
