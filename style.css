@@ -269,7 +269,7 @@ section{
 
 .about .about-img img{
     height: 350px;
-    width: 350px;
+    width: auto;
     object-fit: cover;
     border-radius: 30px;
 }
