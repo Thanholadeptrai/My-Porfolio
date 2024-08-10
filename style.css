@@ -26,10 +26,11 @@ header{
     justify-content: space-between; /* khoảng cách giữa các thành phần luôn bằng nhau */
     padding: 22px 15%; /* (bên trong hộp) căn bên trên 22px, bên phải 15% */
     transition: all .30s ease;
-    background: black;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"/><stop offset="0%" stop-color="%23FF5409"/><stop offset="100%" stop-color="%23ff00"/></radialGradient><radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"/><stop offset="0%" stop-color="%23010FC5"/><stop offset="100%" stop-color="%230ff0"/></radialGradient><radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"/><stop offset="0%" stop-color="%23010FC5"/><stop offset="100%" stop-color="%23f0f0"/></radialGradient><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.152" numOctaves="4" seed="15"  stitchTiles="stitch"/></filter></defs><rect x="0" y="0" width="100%" height="100%" fill="url(%23Gradient1)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"/><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"/><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/></rect><rect x="0" y="0" width="100%" height="100%" fill="url(%23Gradient2)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"/><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"/><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/></rect><rect x="0" y="0" width="100%" height="100%" fill="url(%23Gradient3)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"/><animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"/><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/></rect><rect x="0" y="0" width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.2"/></svg>')
+    no-repeat center center;
+    background-size: cover;
     border-bottom: 1px solid rgb(16, 16, 16);
 }
-
 .logo{
     color: white;
     font-size: 40px;
@@ -38,7 +39,7 @@ header{
 }
 
 .logo span{
-    color:deeppink;
+    color:rgb(179, 102, 252)
 }
 
 .navlist{
@@ -47,21 +48,40 @@ header{
 }
 
 .navlist a{
-    color: white;
+    color:white;
     font-size: 18px;
     font-weight: 300;
     margin: 0 25px;
     transition: all .30s ease; /* điều khiển tốc độ khi thay đổi các thuộc tính của css*/
 }
 
+.navlist a::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.navlist a:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .navlist a:hover{
-    color:deeppink;
+    color:rgb(179, 102, 252);
+}
+.navlist a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(0, 0%, 100%);
+    z-index: -1;
+    transition: transform .3s ease;
 }
 
-.navlist a.active{
-    color:deeppink;
+.navlist a{
+    position: relative;
 }
-
 #menu-icon{
     font-size: 30px;
     color: white;
@@ -79,7 +99,7 @@ header{
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: deeppink;
+    background-color: rgb(179, 102, 252);
     color:white;
     border-radius: 8px;
     line-height: 40px;
@@ -110,7 +130,7 @@ section{
 }
 
 .home .intro .greet1{
-    background-color:deeppink;
+    background-color:rgb(179, 102, 252);
     color: white;
     font-weight: 400;
     font-size: 18px;
@@ -141,7 +161,7 @@ section{
 }
 
 .home .p1 span{
-    color: deeppink;
+    color: rgb(179, 102, 252);
 }
 
 .home .p2{
@@ -154,7 +174,7 @@ section{
 
 .home .button a{
     display: inline-block;
-    background-color:deeppink;
+    background-color:rgb(179, 102, 252);
     border-radius: 8px;
     padding: 12px 30px;
     color: white;
@@ -223,7 +243,7 @@ section{
 }
 
 .home .icons i:hover{
-    color: deeppink;
+    color: rgb(179, 102, 252);
     transform: translateY(-2px);
 }
 
@@ -245,7 +265,7 @@ section{
 }
 
 .aboutme .heading h2 span{
-    color: deeppink;
+    color:rgb(179, 102, 252);
 }
 
 .aboutme .heading p{
@@ -287,7 +307,7 @@ section{
 }
 
 .about .about-content h2 span{
-    color: deeppink;
+    color: rgb(179, 102, 252);
 }
 
 .about .about-content p{
@@ -301,7 +321,7 @@ section{
 }
 
 .about .about-content .icons i{
-    color: deeppink;
+    color: rgb(179, 102, 252);
 }
 
 .about .about-content .icons i:hover{
@@ -315,7 +335,7 @@ section{
 
 .about .about-content .button2 a{
     display: inline-block;
-    background-color:deeppink;
+    background-color:rgb(179, 102, 252);
     border-radius: 8px;
     padding: 12px 30px;
     color: white;
@@ -351,7 +371,7 @@ section{
 }
 
 .quali .headingQ h2 span{
-    color: deeppink;
+    color:rgb(179, 102, 252);
 }
 
 .quali .headingQ p{
@@ -387,7 +407,7 @@ section{
 }
 
 .quali .box .item h3 span{
-    color:deeppink;
+    color:rgb(179, 102, 252);
 }
 
 .quali .box .item .my p{
@@ -419,7 +439,7 @@ section{
 }
 
 .skills .headingS h2 span{
-    color: deeppink;
+    color: rgb(179, 102, 252);
 }
 
 .skills .headingS p{
@@ -469,7 +489,7 @@ section{
 }
 
 .skills .box2 .item h3 span{
-    color: deeppink;
+    color: rgb(179, 102, 252);
 }
 
 .skills .box2 .item .list{
@@ -480,7 +500,7 @@ section{
 .skills .box2 .item .list i{
     padding-left: 7px;
     padding-right: 5px;
-    color: deeppink;
+    color: rgb(179, 102, 252);
 }
 
 .skills .box2 .item .list span{
@@ -508,7 +528,7 @@ section{
 }
 
 .contactme .headingC h2 span{
-    color: deeppink;
+    color: rgb(179, 102, 252);
 }
 
 .contactme .headingC p{
@@ -548,7 +568,7 @@ section{
 
 .contactme form .btn{
     display: inline-block;
-    background-color:deeppink;
+    background-color:rgb(179, 102, 252);
     border-radius: 8px;
     padding: 12px 30px;
     color: white;
@@ -669,10 +689,10 @@ footer{
         color:white;
     }
     .navlist a:hover{
-        color: deeppink;
+        color: rgb(179, 102, 252);
     }
     .navlist a.active{
-        color: deeppink;
+        color: ;
     }
     .navlist.open{
         transform: translateX(0);
