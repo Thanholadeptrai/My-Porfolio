@@ -453,7 +453,7 @@ section{
     width: 100%;
     align-items: left;
     display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 2rem; 
     margin-top: 50px;
 }
@@ -690,9 +690,6 @@ footer{
     }
     .navlist a:hover{
         color: rgb(179, 102, 252);
-    }
-    .navlist a.active{
-        color: ;
     }
     .navlist.open{
         transform: translateX(0);
