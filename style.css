@@ -10,16 +10,8 @@
 body{
     display: flex;
     flex-direction: column;
-    background: black;
+    background-image: url('backgrain.svg');
     color: white;
-}
-#star-sky {
-    position: fixed;
-    z-index: -999;
-	background: linear-gradient(#00111e 30%, #033d5e);
-	vertical-align: bottom;
-	height: 100vh;
-	width: 100%;
 }
 
 /* thanh menu */
