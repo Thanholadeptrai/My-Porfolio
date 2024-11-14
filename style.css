@@ -512,6 +512,89 @@ section{
     font-size: 15px;
 }
 
+/* màn hình my project */
+
+.myproject .headingS{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.myproject .headingS h2{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.myproject .headingS h2 span{
+    color: rgb(179, 102, 252);
+}
+
+.myproject .headingS p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.myproject .box2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: left;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+    margin-top: 50px;
+}
+
+.myproject .box2 .item{
+    position: relative;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-style:groove;
+    border-color:rgb(129, 133, 153);
+    border-width: 1.5px;
+    transition: 0.4s;
+}
+
+.myproject .box2 .item .imgproject{
+    display: grid;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: blueviolet;
+}
+.myproject .box2 .item .imgproject img{
+    width: 100%;
+    height: auto;
+}
+
+.myproject .box2 .item .link{
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.myproject .box2 .item .link .button{
+    display: inline-block;
+    background-color:rgb(179, 102, 252);
+    border-radius: 8px;
+    padding: 7px 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all .30s ease;
+}
+
+.myproject .box2 .item .link .button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    transform: translateX(8px);
+}
 /* màn hình contact me */
 
 .contactme .headingC{
