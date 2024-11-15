@@ -732,7 +732,6 @@ footer{
     .home .icon_container .icons a i{
         font-size: 1.5rem;
     }
-}
 
 @media (max-width: 840px){
     .aboutme .about{
@@ -777,5 +776,14 @@ footer{
     }
     .navlist.open{
         transform: translateX(0);
+    }
+    .myproject .box2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+}
+@media (max-width: 350px){
+    .myproject .box2{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
