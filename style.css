@@ -40,7 +40,7 @@ header{
 }
 
 .logo span{
-    color:rgb(179, 102, 252)
+    color:#fe899f
 }
 
 .navlist{
@@ -67,7 +67,7 @@ header{
 }
 
 .navlist a:hover{
-    color:rgb(179, 102, 252);
+    color:#fe899f;
 }
 .navlist a::before {
     content: " ";
@@ -75,7 +75,7 @@ header{
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: hsl(0, 0%, 100%);
+    background: white;
     z-index: -1;
     transition: transform .3s ease;
 }
@@ -100,7 +100,7 @@ header{
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgb(179, 102, 252);
+    background-color: DECADA;
     color:white;
     border-radius: 8px;
     line-height: 40px;
@@ -131,7 +131,7 @@ section{
 }
 
 .home .intro .greet1{
-    background-color:rgb(179, 102, 252);
+    background-color:#fe899f;
     color: white;
     font-weight: 400;
     font-size: 18px;
@@ -162,7 +162,7 @@ section{
 }
 
 .home .p1 span{
-    color: rgb(179, 102, 252);
+    color: #fe899f;
 }
 
 .home .p2{
@@ -175,7 +175,7 @@ section{
 
 .home .button a{
     display: inline-block;
-    background-color:rgb(179, 102, 252);
+    background-color:#fe899f;
     border-radius: 8px;
     padding: 12px 30px;
     color: white;
@@ -244,7 +244,7 @@ section{
 }
 
 .home .icons i:hover{
-    color: rgb(179, 102, 252);
+    color: #fe899f;
     transform: translateY(-2px);
 }
 
@@ -266,7 +266,7 @@ section{
 }
 
 .aboutme .heading h2 span{
-    color:rgb(179, 102, 252);
+    color:#fe899f;
 }
 
 .aboutme .heading p{
@@ -308,7 +308,7 @@ section{
 }
 
 .about .about-content h2 span{
-    color: rgb(179, 102, 252);
+    color: #fe899f;
 }
 
 .about .about-content p{
@@ -322,7 +322,7 @@ section{
 }
 
 .about .about-content .icons i{
-    color: rgb(179, 102, 252);
+    color: #fe899f;
 }
 
 .about .about-content .icons i:hover{
@@ -336,7 +336,7 @@ section{
 
 .about .about-content .button2 a{
     display: inline-block;
-    background-color:rgb(179, 102, 252);
+    background-color:#fe899f;
     border-radius: 8px;
     padding: 12px 30px;
     color: white;
@@ -372,7 +372,7 @@ section{
 }
 
 .quali .headingQ h2 span{
-    color:rgb(179, 102, 252);
+    color:#fe899f;
 }
 
 .quali .headingQ p{
@@ -408,7 +408,7 @@ section{
 }
 
 .quali .box .item h3 span{
-    color:rgb(179, 102, 252);
+    color:#fe899f;
 }
 
 .quali .box .item .my p{
@@ -440,7 +440,7 @@ section{
 }
 
 .skills .headingS h2 span{
-    color: rgb(179, 102, 252);
+    color: #fe899f;
 }
 
 .skills .headingS p{
@@ -490,7 +490,7 @@ section{
 }
 
 .skills .box2 .item h3 span{
-    color: rgb(179, 102, 252);
+    color: #fe899f;
 }
 
 .skills .box2 .item .list{
@@ -501,7 +501,7 @@ section{
 .skills .box2 .item .list i{
     padding-left: 7px;
     padding-right: 5px;
-    color: rgb(179, 102, 252);
+    color: #fe899f;
 }
 
 .skills .box2 .item .list span{
@@ -529,7 +529,7 @@ section{
 }
 
 .myproject .headingS h2 span{
-    color: rgb(179, 102, 252);
+    color: #fe899f;
 }
 
 .myproject .headingS p{
@@ -580,7 +580,7 @@ section{
 
 .myproject .box2 .item .link .button{
     display: inline-block;
-    background-color:rgb(179, 102, 252);
+    background-color:#fe899f;
     border-radius: 8px;
     padding: 7px 10px;
     margin-top: 20px;
@@ -612,7 +612,7 @@ section{
 }
 
 .contactme .headingC h2 span{
-    color: rgb(179, 102, 252);
+    color: #fe899f;
 }
 
 .contactme .headingC p{
@@ -652,7 +652,7 @@ section{
 
 .contactme form .btn{
     display: inline-block;
-    background-color:rgb(179, 102, 252);
+    background-color:#fe899f;
     border-radius: 8px;
     padding: 12px 30px;
     color: white;
@@ -772,7 +772,7 @@ footer{
         color:white;
     }
     .navlist a:hover{
-        color: rgb(179, 102, 252);
+        color: #fe899f;
     }
     .navlist.open{
         transform: translateX(0);
