@@ -24,3 +24,17 @@ window.addEventListener("scroll", function(){
     } 
 })
 
+// Lấy tất cả các link trong navbar
+const navLinks = document.querySelectorAll('.navlist a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        // Xóa class 'active' từ tất cả các link
+        navLinks.forEach(link => link.classList.remove('active'));
+
+        // Thêm class 'active' vào link được nhấp
+        this.classList.add('active');
+    });
+});
+
+

@@ -7,6 +7,12 @@
     scroll-behavior: smooth;
     list-style: none;
 }
+@font-face{
+    font-family: 'SVN-Beast';
+    src: url('../font/SVN-Beast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -34,12 +40,14 @@ header{
 }
 .logo{
     color: white;
+    font-family: 'SVN-Beast';
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .logo span{
+    font-family: 'SVN-Beast';
     color:#fe899f
 }
 
@@ -54,6 +62,10 @@ header{
     font-weight: 300;
     margin: 0 25px;
     transition: all .30s ease; /* điều khiển tốc độ khi thay đổi các thuộc tính của css*/
+}
+
+.navlist a.active{
+    color: #fe899f;
 }
 
 .navlist a::before{
