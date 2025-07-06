@@ -175,7 +175,7 @@ header{
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: DECADA;
+    background-color: #fe899f;
     color:white;
     border-radius: 8px;
     line-height: 40px;
@@ -284,7 +284,7 @@ section{
 
 .home .icon_container {
     display: flex;
-    padding-top: 250px;
+    padding-top: 280px;
     margin-left: 20px;
 }
 .home .icon_container .icons {
@@ -312,7 +312,7 @@ section{
 
 .home .icons i{
     display: block;
-    margin: 25px 0;
+    margin: 20px 0;
     font-size: 15px;
     color: white;
     transition: all .30s ease;
@@ -461,7 +461,7 @@ section{
     width: 100%;
     align-items: center;
     display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(1, 1fr); 
     gap: 2rem; 
     margin-top: 50px;
 }
@@ -469,12 +469,37 @@ section{
 .quali .box .item{
     position:relative;
     padding: 30px 20px;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 10px;
-    border-style:groove;
+    border-style: groove;
     border-color:rgb(129, 133, 153);
     border-width: 1.5px;
     transition: 0.4s;
+}
+
+.quali .item h3, .quali .item .my{
+    text-align: center;
+}
+
+.quali .box1{
+    display: flex;
+}
+
+.quali .box1 .my{
+    flex: 2;
+    font-weight: 200;
+}
+
+.quali .box1 .my-quali{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.italic-small {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 .quali .box .item h3{
