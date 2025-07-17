@@ -798,10 +798,41 @@ footer{
     .myproject .box2{
         grid-template-columns: repeat(2, 1fr);
     }
+    .home {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding: 80px 5% 0 0%;
+    }
+    .thanhcontact .icon_container {
+        display: flex;
+        padding-top: 150px;
+        margin-left: 20px;
+    }
+    .thanhcontact .icons i{
+        display: block;
+        margin: 15px 0;
+        font-size: 15px;
+        color: white;
+        transition: all .30s ease;
+    }
+
 }
 }
 @media (max-width: 500px){
     .myproject .box2{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .thanhcontact .icon_container {
+        display: flex;
+        padding-top: 100px;
+        margin-left: 15px;
+    }
+    .thanhcontact .icons i{
+        display: block;
+        margin: 10px 0;
+        font-size: 10px;
+        color: white;
+        transition: all .30s ease;
     }
 }
