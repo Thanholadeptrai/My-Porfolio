@@ -4,3 +4,8 @@ var msnry = new Masonry(elem, {
   columnWidth: '.item',
   percentPosition: true
 });
+
+// Chờ toàn bộ ảnh load xong rồi mới layout
+imagesLoaded(elem, function() {
+  msnry.layout();
+});
