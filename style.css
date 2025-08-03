@@ -555,6 +555,52 @@ section{
     font-size: 15px;
 }
 
+.tabs{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tab p{
+    margin-left: 10px;
+}
+
+.tab.active{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #fe899f;
+}
+
+.tab.active p{
+    color: #fe899f;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tab.active i{
+    color: #fe899f;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+#photo{
+    padding: 20px;
+}
+
 .myproject .box2{
     position: relative;
     height: 100%;
@@ -569,7 +615,7 @@ section{
 .myproject .box2 .item{
     position: relative;
     padding: 30px 20px;
-    text-align: center;
+    text-align: start;
     border-radius: 10px;
     border-style:groove;
     border-color:rgb(129, 133, 153);
@@ -577,41 +623,64 @@ section{
     transition: 0.4s;
 }
 
-.myproject .box2 .item .imgproject{
+.myproject .box2 a{
+    text-decoration: none;
+}
+
+.myproject .item img{
     display: grid;
     height: auto;
     width: 100%;
-    text-align: center;
-    background-color: blueviolet;
-}
-.myproject .box2 .item .imgproject img{
-    width: 100%;
-    height: auto;
 }
 
-.myproject .box2 .item .link{
-    display: grid;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+.myproject .info{
+    display: flex;
+    margin-top: 10%;
 }
 
-.myproject .box2 .item .link .button{
-    display: inline-block;
-    background-color:#fe899f;
-    border-radius: 8px;
-    padding: 7px 10px;
-    margin-top: 20px;
+.myproject .text{
+    width: 90%;
+}
+
+.myproject h3{
+    font-size: 16px;
+    color: #fe899f;
+    margin-bottom: 2px;
+}
+
+.myproject .info p{
+    font-size: 12px !important;
     color: white;
-    font-weight: 400;
-    font-size: 15px;
-    transition: all .30s ease;
+    margin-top: 0;
 }
 
-.myproject .box2 .item .link .button:hover{
-    background-color: transparent;
-    border: 2px solid white;
-    transform: translateX(8px);
+.myproject .arrow{
+    display: flex;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.myproject h3:hover{
+    text-decoration: underline;
+}
+
+.image {
+    flex: 0 0 40%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.item:hover .image img {
+    transform: scale(1.1);
 }
 /* màn hình contact me */
 

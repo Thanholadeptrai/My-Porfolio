@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="tab.js" defer></script>
+    <link rel="stylesheet" href="carousel-only.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -68,7 +71,7 @@
                 <img src="photo/profile/img2.jpg">
             </div>
             <div class="about-content">
-                <h2><span>Designer</span> & <span>Editer</span></h2>
+                <h2><span>Editor</span> & <span>Designer</span></h2>
                 <p>Multimedia</p>
                 <div class="icons-list">
                     <ul class="icons">
@@ -81,7 +84,7 @@
                     </ul>
                 </div>
                 <div class="button2">
-                    <a href="https://drive.google.com/file/d/1aeLMSrRf-WNprmbMSWqdmK5ByBaMtuq8/view?usp=drive_link" target="_blank">Download CV <i class="fa-solid fa-file-export"></i></a>
+                    <a href="https://drive.google.com/file/d/1gi7V1ftCzgniNH9RzuICbOuHYb67M9FG/view?usp=drive_link" target="_blank">Download CV <i class="fa-solid fa-file-export"></i></a>
                 </div>
             </div>
         </div>
@@ -165,47 +168,221 @@
             <h2>My <span>Project</span></h2>
             <p>Take a look at some of my projects</p>
         </div>
-        <div class="box2">
-            <div class="item">
-                <div class="imgproject">
-                    <img src="photo/project/Masking.webp" alt="Masking - Tìm hiểu về mask và cách sử dụng" loading="lazy">
+        <div class="noidung">
+                <div class="tabs">
+                    <div class="tab active" onclick="showContent('media')">
+                        <i class="fa-solid fa-photo-film"></i>
+                        <p>Media</p>
+                    </div>
+                    <div class="tab" onclick="showContent('design')">
+                        <i class="fa-solid fa-star"></i>
+                        <p>Design</p>
+                    </div>
                 </div>
-                <div class="link">
-                    <a href="https://youtu.be/Ow_QduXp5vQ" target="_blank" class="button">View Project</a>
+                <div id="media" class="content active">
+                    <div class="box2">
+                        <a href="https://www.tiktok.com/@thanholadeptrai" target="_blank" class="item-link">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="photo/project/media/1.jpg" alt="Photo" loading="lazy">
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>Personal TikTok Channel</h3>
+                                        <p>Tasks: Video Creator & VJ</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.tiktok.com/@growinvietnam" target="_blank" class="item-link">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="photo/project/media/2.jpg" alt="Photo" loading="lazy">
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>TikTok Channel – G R O W</h3>
+                                        <p>Tasks: Filming & Editing (04.2025-Now)</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.behance.net/gallery/231537517/Grow-up-Show-up-Event-Key-Visual" target="_blank" class="item-link">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="photo/project/media/VideoRecap.webp" alt="Photo" loading="lazy">
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>Event - Video Recap</h3>
+                                        <p>Tasks: Filming & Editing</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="sub-page/event.html" target="_blank" class="item-link">
+                            <div class="item">
+                                <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+                                <!-- slide chính -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="photo/project/media/event/event-01.webp" alt="Photo" class="d-block" style="width:100%" loading="lazy">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="photo/project/media/event/event-02.webp" alt="Photo" class="d-block" style="width:100%" loading="lazy">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="photo/project/media/event/event-03.webp" alt="Photo" class="d-block" style="width:100%" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <!-- Left and right controls-->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>Event Photography</h3>
+                                        <p>02.2025 - Now</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="sub-page/concept.html" target="_blank" class="item-link">
+                            <div class="item">
+                                <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                                <!-- slide chính -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="photo/project/media/concept/concept-01.webp" alt="Photo" class="d-block" style="width:100%" loading="lazy">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="photo/project/media/concept/concept-02.webp" alt="Photo" class="d-block" style="width:100%" loading="lazy">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="photo/project/media/concept/concept-03.webp" alt="Photo" class="d-block" style="width:100%" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <!-- Left and right controls-->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>Concept & Landscape</h3>
+                                        <p>12.2023 - Now</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="imgproject">
-                    <img src="photo/project/Eclipse.webp" alt="Eclipse - Ấn phẩm tuyển thành viên Sổ Media" loading="lazy">
+                <div id="design" class="content">
+                    <div class="box2">
+                        <a href="https://www.behance.net/gallery/231537517/Grow-up-Show-up-Event-Key-Visual" target="_blank" class="item-link">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="photo/project/GUSU.webp" alt="Photo" loading="lazy">
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>GUSU – Event Key Visual</h3>
+                                        <p>Industry: Education<br>Date: 06.2025</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.behance.net/gallery/211179381/Eclipse-n-phm-Tuyn-thanh-vien-S-Media" target="_blank" class="item-link">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="photo/project/Eclipse.webp" alt="Photo" loading="lazy">
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>Eclipse – Recruitment Campaign for So Media</h3>
+                                        <p>Date: 09.2024</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.behance.net/gallery/205688689/Me-Clinic-Brand-Identity" target="_blank" class="item-link">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="photo/project/MeClinic.webp" alt="Photo" loading="lazy">
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>Me Clinic - Brand Identity</h3>
+                                        <p>Industry: Beauty<br>Date: 11.2023</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.behance.net/gallery/205352651/Growth-n-phm-Tuyn-thanh-vien-S-Media" target="_blank" class="item-link">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="photo/project/Growth.webp" alt="Photo" loading="lazy">
+                                </div>
+                                <div class="info">
+                                    <div class="text">
+                                        <h3>Growth – Standee & Flyer for Recruitment Campaign</h3>
+                                        <p>Date: 10.2023</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="fa-solid fa-arrow-right" style="color: #fe899f;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- <div class="item">
+                            <div class="imgproject">
+                                <img src="photo/project/Masking.webp" alt="Masking - Tìm hiểu về mask và cách sử dụng" loading="lazy">
+                            </div>
+                            <div class="link">
+                                <a href="https://youtu.be/Ow_QduXp5vQ" target="_blank" class="button">View Project</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="imgproject">
+                                <img src="photo/project/chieudong.webp" alt="Chiều đông - Bộ ảnh đường phố Hà Nội" loading="lazy">
+                            </div>
+                            <div class="link">
+                                <a href="https://www.behance.net/gallery/213170195/Chiu-dong-Ha-Ni" target="_blank" class="button">View Project</a>
+                            </div>
+                        </div> -->
+                    </div>
                 </div>
-                <div class="link">
-                    <a href="https://www.behance.net/gallery/211179381/Eclipse-n-phm-Tuyn-thanh-vien-S-Media" target="_blank" class="button">View Project</a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgproject">
-                    <img src="photo/project/MeClinic.webp" alt="Me Clinic - Brand Identity" loading="lazy">
-                </div>
-                <div class="link">
-                    <a href="https://www.behance.net/gallery/205688689/Me-Clinic-Brand-Identity" target="_blank" class="button">View Project</a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgproject">
-                    <img src="photo/project/Growth.webp" alt="Growth - Ấn phẩm tuyển thành viên Sổ Media" loading="lazy">
-                </div>
-                <div class="link">
-                    <a href="https://www.behance.net/gallery/205352651/Growth-n-phm-Tuyn-thanh-vien-S-Media" target="_blank" class="button">View Project</a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgproject">
-                    <img src="photo/project/chieudong.webp" alt="Chiều đông - Bộ ảnh đường phố Hà Nội" loading="lazy">
-                </div>
-                <div class="link">
-                    <a href="https://www.behance.net/gallery/213170195/Chiu-dong-Ha-Ni" target="_blank" class="button">View Project</a>
-                </div>
-            </div>
         </div>
     </section>
     <!-- màn hình contact me -->
