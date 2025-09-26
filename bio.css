@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SVN-Poppins-Regular';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+@font-face{
+    font-family: 'SVN-Beast';
+    src: url('../font/SVN-Beast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'SVN-Poppins-Regular';
+    src: url('font/SVN-Poppins-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'SVN-Poppins-Italic';
+    src: url('font/SVN-Poppins-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(35, 32, 45); */
+    color:white;
+}
+
+#star-sky {
+    position: fixed;
+    z-index: -999;
+    vertical-align: bottom;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #stars, #stars:after {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 120px 300px #FFF, 450px 120px #FFF, 780px 640px #FFF, 1020px 450px #FFF, 130px 890px #FFF,
+                860px 220px #FFF, 590px 710px #FFF, 900px 150px #FFF, 340px 960px #FFF, 1110px 520px #FFF,
+                150px 620px #FFF, 480px 780px #FFF, 690px 310px #FFF, 920px 540px #FFF, 1050px 870px #FFF;
+    animation: animStar 50s linear infinite;
+  }
+  
+  #stars:after {
+    content: "";
+    position: absolute;
+    top: 2000px;
+  }
+  
+  #stars2, #stars2:after {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 100px 750px #FFF, 530px 430px #FFF, 920px 240px #FFF, 670px 800px #FFF, 250px 1000px #FFF,
+                880px 560px #FFF, 390px 140px #FFF, 1110px 300px #FFF, 480px 910px #FFF, 780px 670px #FFF;
+    animation: animStar 100s linear infinite;
+  }
+  
+  #stars2:after {
+    content: "";
+    position: absolute;
+    top: 2000px;
+  }
+  
+  #stars3, #stars3:after {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 210px 330px #FFF, 590px 910px #FFF, 890px 250px #FFF, 1340px 670px #FFF, 320px 770px #FFF,
+                1090px 110px #FFF, 460px 570px #FFF, 780px 920px #FFF, 690px 440px #FFF, 990px 130px #FFF;
+    animation: animStar 150s linear infinite;
+  }
+  
+  #stars3:after {
+    content: "";
+    position: absolute;
+    top: 2000px;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+
+
+section{
+        padding: 20px 25% 0;
+}
+  
+    /* header */
+.profile{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.profile .profile-img{
+    text-align: center;
+}
+
+.profile .profile-img img{
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px 1px white;
+}
+
+.profile h2{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'SVN-Beast';
+    color: white;
+}
+
+.contact .icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact .icons a {
+  color: white;
+  font-size: 20px;
+  transition: all .30s ease;
+}
+
+.contact .icons a:hover {
+  color: #fe899f;
+  transform: translateY(-2px);
+}
+
+/* work */
+
+.work a {
+  display: flex;                /* sắp xếp ảnh + chữ theo hàng ngang */
+  align-items: center;          /* căn giữa theo chiều dọc */
+  border: 2px solid #f8a3a3;    /* viền hồng */
+  border-radius: 12px;          /* bo góc */
+  background-color: #ffeef023;
+  color: white;                 /* màu chữ */
+}
+
+.work a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 11px;
+  object-fit: cover;            /* cắt ảnh vừa khung */
+}
+.work a .infor{
+  flex: 1;                      /* chiếm hết phần còn lại */
+  text-align: center;           /* căn giữa chữ */
+  padding: 0 10px;
+}
+.work a h3 {
+  font-size: 16px;
+}
+
+.work a h3 span {
+  color: #fe899f;
+}
+
+.work a p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.work a:hover {
+  background-color: #ffeef045;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px 1px #fe899f;
+}
+
+@media (max-width: 1024px){
+  section{
+        padding: 20px 15% 0;
+  }
+}
+
+@media (max-width: 480px){
+  section{
+        padding: 15px 7% 0;
+  }
+}
